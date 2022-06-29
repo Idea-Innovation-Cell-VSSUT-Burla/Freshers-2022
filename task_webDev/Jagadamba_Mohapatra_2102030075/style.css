@@ -1,0 +1,202 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar ::before{
+    content: "";
+    position: absolute;
+    background:rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul a{
+    padding: 5px 20px;
+    text-decoration: none ;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid yellow;
+    text-transform: uppercase;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    color: rgb(25, 26, 22);
+    }
+    #home::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("background.webp") no-repeat center center/cover;
+        height: 700px;
+        width: 100%;
+        z-index:-1;
+        opacity: .8;
+    }
+    .heading{
+        color: rgb(25, 26, 22);
+        font-size: 3rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        transform: scale(1,1);
+    }
+
+    /* Portfolio Section  */
+    #portfolio{
+        display: flex;
+        flex-direction: column;
+        background-color: #000000dc;
+    }
+    #portfolio h1{
+        margin: 60px;
+    }
+    .gallery{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+    .gallery img{
+        width: 360px;
+        height: 640px;
+        padding: 10px;
+        margin: 10px;
+    }
+ .gallery img:hover{
+        background-color: black;
+        cursor: pointer;
+    }
+
+    /* Education Section */
+    #education{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    #education h1{
+        margin: 60px;
+    }
+    .columns{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+    }
+    .box{
+        height: 200px;
+        width: 500px;
+        background-color: black;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+    .box h2{
+        color: yellowgreen;
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .box p{
+        color: black;
+        font-size: 1.1rem;
+    }
+
+    /* About Section */
+    about{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+    #about h1{
+        color: black;
+        margin: 55px;
+    }
+    .about{
+        display: flex;
+    }
+    .about img{
+        width: 500px;
+        height: 400px;
+        padding: 0px 30px;
+    }
+.name{
+    padding: 10px;
+}
+.name h2{
+    font-size: 2rem;
+}
+.name p{
+    font-size: 1.2rem;
+}
+
+/* Contact Section  */
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1{
+    margin: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: black;
+    color: blueviolet;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+
+
