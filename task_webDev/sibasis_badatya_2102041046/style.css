@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Allison&family=Arimo&family=Bad+Script&family=Bebas+Neue&family=Bubblegum+Sans&family=Caveat&family=Cookie&family=Dancing+Script&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Lobster+Two&family=Pathway+Gothic+One&family=Racing+Sans+One&family=Style+Script&family=Teko:wght@300&family=Water+Brush&display=swap');
+
+html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #55E6C1;
+}
+
+.container {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+#container1 {
+    position: sticky;
+    top: 0px;
+}
+
+ul {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+li {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0rem 4rem 0rem 1rem;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#navbar {
+    background-color: #1B9CFC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.image {
+    height: 40vh;
+    background-color: #e056fd;
+    margin-right: auto;
+}
+
+.img10 {
+    /* background-image:url("jnv.jpg"); */
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    margin-right: auto;
+}
+
+#fb {
+    color: blue
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(73, 69, 69);
+    background-color: black;
+}
+
+.name span {
+    animation: glow 2s linear infinite;
+    animation-direction: alternate;
+}
+
+/* glowing animation */
+@keyframes glow {
+    0% {
+        color: rgb(73, 69, 69);
+        text-shadow: none;
+    }
+
+    100% {
+        color: white;
+        text-shadow: 0 0 20px cyan;
+    }
+}
+
+.name span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.title h2 {
+    color: aliceblue;
+}
+
+.img12 {
+    /* background-image:url("jnv.jpg"); */
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    margin-right: auto;
+}
+
+.btechimg {
+    /* background-image:url("vssut.jpg"); */
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    margin-right: auto;
+}
+
+#container3 {
+    padding: 20px;
+    background-color: #ffb8b8;
+}
+
+.matriculation {
+    height: 30vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.intermediate {
+    height: 30vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btech {
+    height: 30vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.about {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    width: 50%;
+    height: 100%;
+    font-size: 3rem;
+    align-items: center;
+    overflow: auto;
+    font-family: 'Bad Script', cursive;
+    color: #1e3799;
+}
+
+#container4 {
+    height: 30vh;
+    background-color: #7d5fff;
+}
+
+#container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #cd84f1;
+    margin: 10px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #6D214F;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+#container5 {
+    height: 30vh;
+    background-color: #B33771;
+}
+
+#container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #9AECDB;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    color: #0c2461;
+
+}
+
+.heading {
+    font-size: 5rem;
+    font-family: 'Water Brush', cursive;
+    text-shadow: 1px 1px 2px black;
+    color: red;
+    padding: 10px;
+}
+
+footer {
+    background-color: #182C61;
+    padding: 10px;
+    color: #FEA47F;
+}
+
+/* media queries */
+@media only screen and (max-width:1270px) {
+    .contact {
+        font-size: 2rem;
+    }
+
+    .hobby {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 2rem;
+    }
+
+    .btech {
+        height: 20vh;
+    }
+
+    .matriculation {
+        height: 20vh;
+    }
+
+    .intermediate {
+        height: 20vh;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    .contact {
+        font-size: 1.5rem;
+    }
+
+    .hobby {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        font-size: 1.5rem;
+    }
+
+    .btech {
+        height: 15vh;
+    }
+
+    .matriculation {
+        height: 15vh;
+    }
+
+    .intermediate {
+        height: 15vh;
+    }
+
+    .image {
+        height: 35vh;
+    }
+
+    #container4 {
+        height: 20vh;
+    }
+
+    #container5 {
+        height: 20vh;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .contact {
+        font-size: 1rem;
+    }
+
+    .hobby {
+        font-size: 1rem;      
+    }
+
+    .about {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .btech {
+        height: 10vh;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .matriculation {
+        height: 10vh;
+         margin: 5px;
+         padding: 5px;
+    }
+
+    .intermediate {
+        height: 10vh;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .image {
+        height: 25vh;
+    }
+
+    #container4 {
+        height: 15vh;
+        margin: 5px;
+    }
+
+    #container5 {
+        height: 15vh;
+        margin: 5px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+    .footer{
+        padding: 7px;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+    li {
+        display: inline-block;
+        padding: 1rem;
+        margin: 0rem 2rem 0rem 1rem;
+        box-sizing: border-box;
+    }
+    #fb{
+        font-size: 1rem;
+    }
+    .contact {
+        font-size: 0.7rem;
+    }
+
+    .hobby {
+        font-size: 1rem;      
+    }
+
+    .about {
+        font-size: 0.7rem;
+    }
+
+    .btech {
+        height: 7vh;
+        margin: 5px;
+    }
+
+    .matriculation {
+        height: 7vh;
+         margin: 5px;
+    }
+
+    .intermediate {
+        height: 7vh;
+        margin: 5px;
+    }
+
+    .image {
+        height: 25vh;
+    }
+
+    #container4 {
+        height: 12vh;
+        margin: 5px;
+    }
+
+    #container5 {
+        height: 12vh;
+        margin: 5px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+    .footer{
+        padding: 7px;
+    }
+}
+
+
+@media only screen and (max-width:385px) {
+    li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0rem 2rem 0rem 1rem;
+        box-sizing: border-box;
+    }
+    a{
+        font-size: 1rem;
+    }
+    a:hover {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+    #fb{
+        font-size: 1rem;
+    }
+    .contact {
+        font-size: 0.7rem;
+    }
+
+    .hobby {
+        font-size: 1rem;      
+    }
+
+    .about {
+        font-size: 0.7rem;
+    }
+
+    .btech {
+        height: 7vh;
+        margin: 5px;
+    }
+
+    .matriculation {
+        height: 7vh;
+         margin: 5px;
+    }
+
+    .intermediate {
+        height: 7vh;
+        margin: 5px;
+    }
+
+    .image {
+        height: 20vh;
+    }
+.name span{
+    font-size: 2rem;
+}
+ .title{
+    font-size: 0.8rem;
+}
+    #container4 {
+        height: 12vh;
+        margin: 5px;
+    }
+
+    #container5 {
+        height: 12vh;
+        margin: 5px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+    .footer{
+        padding: 7px;
+        margin: 5px;
+    }
+}
