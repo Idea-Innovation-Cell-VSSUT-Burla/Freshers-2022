@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    background-image: url(background\ 4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120% 110%;
+
+}
+.th{
+    color: #fff;
+}
+li{
+    color: #fff;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+    animation-name: art;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction:  alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+@keyframes art {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    20%{
+        top: 100px;
+        left: 200px;
+    }
+    45%{
+        top: 300px;
+        left: 100px;
+    }
+    75%{
+        top: 230px;
+        left: 500px;
+    }
+    88%{
+        top: 200px;
+        left: 0px;
+    }
+    100%{
+        top: 180px;
+        left: 0px;
+    }
+    
+}
+span{
+    color:  rgba(196, 168, 160, 0.637);
+}
+span1{
+    color:red;
+}
+span2{
+    color: yellowgreen;
+}
+span3{
+    color: rgb(144, 234, 9);
+}

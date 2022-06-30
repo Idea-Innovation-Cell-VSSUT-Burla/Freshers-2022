@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    background-image: url('background 5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 1080px;
+    color: #fff;
+}
+.hey{
+    color: #fff;
+}
+.cet{
+    border-radius: 12px 12px;
+    box-shadow: 0 2px 12px rgb(32,32,32,.3);
+    border-collapse: collapse;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    align-items: center;
+}
+span{
+    color:  rgba(196, 168, 160, 0.637);
+}
+span1{
+    color:red;
+}
+span2{
+    color: yellowgreen;
+}
+span3{
+    color: rgb(144, 234, 9);
+}
+span4{
+    color:rgb(27, 186, 157);
+}
+tr{
+    color: #fff;
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+    animation-name: art1;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction:  alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+@keyframes art1 {
+    0%{
+        top: 0px;
+        right: 0px;
+    }
+    20%{
+        top: 100px;
+        right: 200px;
+    }
+    45%{
+        top: 300px;
+        right: 100px;
+    }
+    75%{
+        top: 230px;
+        right: 380px;
+    }
+    88%{
+        top: 200px;
+        right: 0px;
+    }
+    100%{
+        top: 180px;
+        right: 0px;
+    }

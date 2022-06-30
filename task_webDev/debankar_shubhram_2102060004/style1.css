@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    background-image: url('background 2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+span{
+    color:  rgba(196, 168, 160, 0.637);
+}
+span1{
+    color:red;
+}
+span2{
+    color: yellowgreen;
+}
+.about{
+    color: #fff;
+}
+.about{
+    width: 400px;
+    position: relative;
+    animation-name: debu;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-out;
+    animation-direction: reverse;  
+}
+@keyframes debu {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    
+    25%{
+        top: 150px;
+        left: 0px;
+    }
+    65%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 250px;
+        left: 0;
+    }
+    
+}
+.image{
+    position: relative;
+    top: -600px;
+    left: 1150px;
+    width: 300px;
+
+}
