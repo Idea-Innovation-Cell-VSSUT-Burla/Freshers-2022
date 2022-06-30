@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b3caa661c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue&family=Inter&family=JetBrains+Mono&family=Montserrat&family=Poppins&family=Roboto&family=Sora&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header" style="background-color: #8490ff;height: 40vh;">
+        <nav class="navbar" >
+            <div class="left">
+                <a href="index.html"><img src="sign.jpeg" alt=""></a>
+            </div>
+            <div class="right"> 
+                <div class="nav-links" id="navlink">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT ME</a></li>
+                        <li><a href="">GALLERY</a></li>
+    
+                    </ul>
+                </div>
+                <div class="icon">
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            </div>
+        </nav>
+    <h1>Contact Us</h1>
+   </section>
+    <section class="last">
+        <div class="up">
+            <h1>If Not Now, When? Let’s Work Together!</h1>
+            <!-- <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et <br> dolore magna aliqua. Quis
+                ipsum suspendisces gravida. Risus commodo viverra.</p> -->
+
+        </div>
+        <div class="middle1">
+
+            <!-- <h1>CONTACT <span>US</span></h1> -->
+
+        </div>
+        <div class="middle2">
+
+            <div class="card">
+                <i class="fa-solid fa-phone"></i>
+                <h1>CALL ME</h1>
+                <h5>9861640861</h5>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>EMAIL ME</h1>
+                <h5>bishnusahu393@gmail.com</h5>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-house-circle-check"></i>
+                <h1>ADDRESS</h1>
+                <h5>AT/PO-RAIRANGPUR</h5>
+            </div>
+        </div>
+        <form action="form-handaler.php" method="post">
+            <div class="down">
+                <div class="one">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="text" name="phone" placeholder="Contact Number">
+                </div>
+                <div class="two">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="three">
+                    <button class="btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="one">
+            <a href="index.html">
+                <h1>BISHNU <span>PRASAD </span> SAHU    </h1>
+            </a>
+        </div>
+        <div class="two">
+            <h1>FOLLOW ME</h1>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+        </div>
+        <div class="three">
+            <h5>
+                Copyright ©2022 All rights reserved | This website is made with <i class="fa-solid fa-heart"></i> by <span>Bishnu</span>
+                </h5>
+        </div>
+    </section>
+</body>
+<script>
+    var navlink = document.getElementById("navlink");
+
+    function showMenu() {
+        navlink.style.right = "0";
+    }
+    function hideMenu() {
+        navlink.style.right = "-200px";
+    }
+
+
+</script>
+
+</html>
