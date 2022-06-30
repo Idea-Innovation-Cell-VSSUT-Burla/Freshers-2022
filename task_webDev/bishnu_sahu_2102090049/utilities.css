@@ -1,0 +1,24 @@
+
+.btn {
+    width: 220px;
+    height: 50px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 55px;
+    margin-top: 23px; 
+}
+.btn:hover{
+    background-color: var(--maintxt);
+    color: var(--secondary);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
