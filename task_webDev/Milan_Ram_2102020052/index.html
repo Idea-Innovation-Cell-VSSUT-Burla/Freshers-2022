@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milan Ram :: Portfolio</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="headerId">
+      <span id="closeIcon"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="logo"><h2>Milan Ram</h2></div>
+      <ul>
+        <li>
+          <a href="#"
+            ><ion-icon name="home-outline"></ion-icon><span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about"
+            ><ion-icon name="person-outline"></ion-icon><span> About Me</span>
+          </a>
+        </li>
+        <li >
+          <a href="#skill"
+            ><ion-icon name="construct-outline"></ion-icon><span> Skills</span>
+          </a>
+        </li>
+        <li id="contact-li" onclick="drop()" ">
+          <a href="#" 
+            ><ion-icon name="mail-outline"></ion-icon><span> Contact Me</span>
+            <div class="drop-menu" id="drop-down">
+             <ul> 
+              <li>
+                <h2>Phone : 9837837723</h2>
+              </li>
+              <li>
+                <h2>Email : milanram0780@gmail.com</h2>
+              </li>
+            </ul>
+            </div>
+          </a>
+        </li>
+      </ul>
+      
+      
+    </header>  
+      <button id="menu-icon"><ion-icon name="menu-outline"></ion-icon></button>         
+     <div class="image-back-card"></div>
+
+    <section class="container">
+      <div class="intro">
+        <h3>Hello , I am</h3>
+        <h1>Milan Ram</h1>
+        <span
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          facilis nemo magnam id temporibus ipsam nobis quae cupiditate. Labore
+          accusamus saepe, deserunt alias error similique.
+        </span>
+      </div>
+      <div class="image"><img src="3474950.jpg" alt="" /></div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/milan_0160" target="_blank"><ion-icon  class="scl" name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://github.com/Milan-Ram" target="_blank"><ion-icon class="scl" name="logo-github"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/milan-ram/" target="_blank"><ion-icon  class="scl"name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#"><ion-icon class="scl" name="logo-facebook"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Me -->
+
+    <section class="aboutMe" id="about">
+      <h1>About Me</h1>
+      <p>
+        Currently, I am pursuing
+        <span> Bachelors of Technology degree </span> in Chemical Engineering
+        from <br /><span> Veer Surendra Sai University of Technology </span
+        >,Odisha
+      </p>
+      
+      <p>
+        Completed my <span> Intermediate</span> and
+        <span>  matriculation</span> from
+        <span> Kerala English Medium School</span>,Keonjhar
+      </p>
+      <button>My Resume</button>
+    
+    </section>
+
+    <!-- skills page -->
+
+    <section class="Skills" id="skill">
+      <h1>Skills And Projects</h1>
+       
+       <div class="flex">
+         <div class="card">
+            <div class="img-holder">
+                 <img src="1.jpg" alt=""> 
+               <div class="blur-box">
+                 <h3>Web Development</h3>
+                <button><a href="https://github.com/Milan-Ram" target="_blank">Projects</a> </button></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-holder">
+                <img  src="5.jpg" alt="">
+              <div class="blur-box">
+                <h3>C /C++</h3>
+                <button><a href="https://github.com/Milan-Ram" target="_blank">Projects</a> </button></div>  
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-holder">
+               <img  src="4.jpg" alt=""></div>
+               <div class="blur-box">
+                <h3>Some of My Projects</h3>
+                <button><a href="https://github.com/Milan-Ram" target="_blank">Projects</a> </button></div> 
+  
+        </div> 
+      </div> 
+    </section>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+     let status=document.getElementById('drop-down').style.display;
+      function drop(){
+        if(status=='block'){
+          document.getElementById('drop-down').style.display='none';
+        }
+        else if(status=='none'){
+          document.getElementById('drop-down').style.display='block';
+        }
+      }
+    </script>
+    <script>
+      var menu=document.getElementById('menu-icon');
+      var head=document.getElementById('headerId');
+      var close=document.getElementById('closeIcon');
+      menu.addEventListener('click',()=>{
+      head.style.display='block';
+      })
+      close.addEventListener('click',()=>{
+      head.style.display='none';
+      })
+    </script>
+  </body>
+</html>
