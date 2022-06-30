@@ -1,0 +1,394 @@
+*{
+	margin:0;
+	padding: 0;
+}
+:root{
+	--c1:#7b325f;
+	--c2:rgb(93, 120, 65);
+	--c3:#8e8226;
+	--c4:rgb(9, 121, 134);
+	--primary:#8e8226;
+	
+}
+body{
+    background:var(--primary);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.aside{
+	width: 52px;
+	background: black;
+	position: fixed;
+	right:0;
+	top:50;
+	
+z-index: 10;
+border-radius: 30px;
+border:0.2px solid var(--primary);
+
+}
+.color{
+	border-radius: 50%;
+	
+	height: 20px;
+	width:20px;
+}
+#color1{
+	background:#7b325f;
+}
+#color2{
+	background:rgb(93, 120, 65);
+}
+#color3{
+	background: #ad9f33;
+}
+#color4{
+	background: rgb(10, 105, 115);
+}
+.colorbox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap:12px;
+	padding: 25px;
+}
+#wave{
+	width: 100%;
+	height: 14rem;
+	transform:rotate(180deg);
+}
+
+#contact{
+	font-family:'Pompiere',cursive;
+	color: rgb(219, 226, 231);
+	margin-bottom: 0;
+	padding-top: 5rem;
+	text-align: center;
+	background:black;
+	font-size: 4rem;
+}
+#back{
+	height: 12rem;
+    cursor: pointer;
+    transition:.4s ease;
+	
+}
+.linkbox{
+	
+	height: 17.5rem;
+}
+#back:hover{
+	transition:.3s ease;
+	transform: scaleX(1.23);
+}
+
+.flexbox{
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+	
+	flex-wrap: wrap;
+}
+
+/*----- contact form ----*/
+.contact-form{
+	background-color: black;
+    padding:4rem;
+	
+	padding-right: 10rem;
+	
+	margin-bottom:8rem ;
+	position: relative;
+color: aliceblue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-bottom: 7rem;
+}
+
+
+@media(max-width:1023px)
+{
+  .contact-form{
+      width:14.62rem;
+	  margin:.3rem;
+	  padding-left:3.6rem;
+	overflow: hidden;
+  }
+  .linkbox{
+	height:4rem;
+  }
+  
+  
+}
+.circle{
+	
+	border-radius: 50%;
+	background:linear-gradient(135deg,transparent 20%,var(--primary)) ;
+	position: absolute;
+}
+.circle.one{
+	width:130px;
+	height:130px;
+	top:130px;
+	right: -40px;
+
+}
+.circle.two{
+	width:80px;
+	height:80px;
+	top:10px;
+	right: 30px;
+}
+.contact-form::before{
+	content:"";
+	position:absolute;
+	width:60px;
+	height:60px;
+	background-color: black;
+	transform: rotate(45deg);
+	top:52px;
+	left:-13px;
+}
+
+.title{
+	font-weight:500;
+	font-size: 2rem;
+	line-height: 1;
+	margin-bottom: 3rem;
+}
+.input-container{
+	margin: 1rem 0;
+	position: relative;
+font-family: 'Pompiere' cursive;
+
+}
+.label{
+	display: none;
+}
+.input{
+	width:100%;
+	outline: none;
+	border: 2px solid var(--primary);
+	background: none;
+	padding: .9rem 1.2rem;
+	border-radius: 25px;
+	transform: .3s;
+	font-weight: 500;
+	letter-spacing: .5px;
+	z-index: 1000;
+	color: white;
+	
+}
+textarea.input{
+	padding:.8rem 1.2rem;
+	min-height: 170px;
+	min-width: 350px;
+	border-radius: 22px;
+	resize: none;
+	overflow-y: auto;
+	color: white;
+}
+.input-container label{
+	position:absolute;
+	top:35%;
+	left: 19px;
+	transform: translateY(-50%);
+	padding: 0 0.7rem;
+	font-size: .9rem;
+	font-weight: 400;
+	pointer-events: none;
+	transition: .5s;
+	z-index: 1000;
+	
+}
+.input-container.textarea label{
+	top:1rem;
+	transform: translateY(0);
+}
+.input-container span{
+	position:absolute;
+	top:0;
+	left:25px;
+	transform: translateY(-50%);
+	font-size: .8rem;
+	padding: 0 0.4rem;
+	color: transparent;
+	pointer-events: none;
+	z-index: 500;
+}
+.input-container span:before,
+.input-container span:after{
+	content:"";
+	position: absolute;
+
+	opacity: 0;
+	transition: .3s;
+	height: 4px;
+	background-color:black ;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+.input-container span:before{
+	left:50%
+}
+.input-container span:after{
+	right:50%
+}
+.input-container.focus label{
+	top:0;
+	transform: translateY(-50%);
+
+	font-size: .8rem;
+}
+.input-container.focus span:before,
+.input-container.focus span:after{
+width:50%;
+opacity: 1;
+}
+
+/*------ send button ------*/
+.btn{
+	padding: 1rem 2.2rem;
+	background-color:var(--primary);
+	color: black;
+	font-size: .8rem;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 2.3rem;
+	position:absolute;
+	right:10%;
+	
+}
+
+.btn:hover{
+	background-color: black;
+	border: 2px solid var(--primary) ;
+	color: aliceblue;
+	
+}
+.btn *{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+.icon{
+	opacity: 0;
+}
+.btn:focus{
+	height: 3rem;
+	
+	border-radius: 50%;
+	background-color: #ad9f33;
+	
+}
+.btn:focus .text{
+	opacity: 0;
+}
+.btn:focus .icon{
+	opacity: 1;
+	transition-delay: .5s;
+	color: black;
+}
+
+/*------ leftside -----*/
+
+.leftbox{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+.link{
+	width:60px;
+	height:60px;
+	
+
+	text-decoration: none;
+	font-size: 26px;
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	outline:2px solid black;
+	transition-property: outline-offset, outline-color,background-color;
+	transition-duration: .25s;
+}
+.link:hover{
+	outline-offset: 4px;
+}
+.linkedin:hover{
+background-color: #053189;
+outline-color:#053189;
+}
+.github:hover{
+	background-color: rgb(150, 71, 24);
+	outline-color: rgb(147, 67, 21);
+	}
+.facebook:hover{
+    background-color: rgb(40, 113, 156);
+    outline-color:rgb(36, 117, 163);
+}
+.twitter:hover{
+    background-color: rgb(55, 132, 158);
+    outline-color:rgb(52, 125, 149);
+}
+.telegram:hover{
+    background-color: rgb(23, 83, 120);
+    outline-color:rgb(23, 83, 120);
+}
+.linkedin{
+	bottom:53px;
+	position: relative;
+	margin-top: 3rem;
+	padding: 1.2rem;
+	
+}
+.github{
+	bottom:-4px;
+	position: relative;
+	margin-top: 3rem;
+	padding: 1.2rem;
+	margin: .3rem;
+}
+.facebook{
+	bottom:15px;
+	position: relative;
+	margin-top: 3rem;
+	padding: 1.2rem;
+	margin: .3rem;
+}
+.twitter{
+	bottom:15px;
+	position: relative;
+	margin-top: 3rem;
+	padding: 1.2rem;
+	margin: .3rem;
+}
+.telegram{
+	bottom:53px;
+	position: relative;
+	margin-top: 3rem;
+	padding: 1.2rem;
+	
+}
+#msg{
+	font-family: 'Pompiere', cursive;
+	color:black;
+	margin-bottom: 5rem;
+	font-size: 3.2rem;
+	font-weight: 2px;
+	padding: 3rem;
+	padding-right: .9rem;
+    animation: 2s side;
+	
+}
+@keyframes side{
+	from{ 
+		margin-left: -300px;
+	}
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact-style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niconne&family=Pompiere&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+   
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="aside">
+    <div class="colorbox">
+       <div class="color "id="color1"onclick="colorchange()"></div>
+       <div class="color" id="color2" onclick="colorchange()"></div>
+       <div class="color" id="color3"onclick="colorchange()"></div>
+       <div class="color"id="color4"onclick="colorchange()"></div>
+     </div>
+    </div>
+    <h1 id="contact" >Contact Me </h1>
+    <img id="wave" src="wave.png">
+    <div class="flexbox">
+        <div class="leftbox">
+            <a href="index.html"><img src="back.png" id="back"></a>
+            <h1 id="msg"><b>Feel free to connet !</b></h1>
+            <div class="linkbox">
+              <a href="https://www.linkedin.com/in/anugya-baraik-986500210" class="link linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.facebook.com/anugya.ruchi" class="link facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://github.com/Anugya12" class="link github">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://twitter.com/AnugyaBaraik?t=4A5ndNy1wc9NnqQS3H2FDg&s=08" class="link twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://t.me/anugya_baraik" class="link telegram">
+                <i class="fab fa-telegram"></i>
+              </a>
+              
+            </div>
+        </div>
+        <div class="contact-form"data-aos="fade-left">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="mailto:anugyabaraik12@gmail.com" onsubmit="{handlesubmit}"  >
+              <h3 class="title">Let's talk..</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Name</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+    
+              <button class="btn">
+                <span class="text"><b>SEND</b></span>
+                <i class="fas fa-check icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <script src="contact-script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init({
+          duration:1500
+         }
+         );
+    </script>
+</body>
+</html>
