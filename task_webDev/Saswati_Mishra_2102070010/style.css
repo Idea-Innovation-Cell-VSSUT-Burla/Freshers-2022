@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+font-family: 'Noto Serif', serif;
+
+}
+.hero{
+    height:100vh;
+    width: 100%;
+    background-image: url(Saswati.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left:8%;
+    padding-right: 8%;
+}
+.logo{
+    color:rgb(58, 4, 82);
+    font-size:40px;
+    letter-spacing:1px;
+    cursor: pointer;
+}
+#sp1{
+ color: rgb(128, 67, 165);
+}
+#sp2{
+    color:rgb(177, 117, 223);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%) ;
+
+}
+#name{
+    color:rgb(46, 5, 46);
+    /* margin:75px 0px 20px; */
+    font-size: 70px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 75px;
+    margin-right:0px;
+    margin-left: 0px;
+}
+#job{
+    margin-bottom: 30px;
+    font-size:25px ;
+    color: rgb(117, 72, 159);
+}
+.about{
+    width:100%;
+    padding:65px 0px;
+    background-color:rgb(221, 175, 225);
+}
+.about img{
+    height: auto;
+    width:430px;
+}
+.about-text{
+    width: 550px;
+}
+#imp{
+    width:1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.about-text h2{
+    color:rgb(13, 1, 13);
+    font-size: 75px;
+    text-transform: capitalize;
+    margin: bottom 20px;
+}
+.about-text p{
+    color:black;
+    font-size:16px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom:35px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.social{
+    display:flex;
+}
+/* for social media icons */
+.fa-brands{
+  font-size: 50px; 
+  color: black; 
+  display:flex;
+}
+.fa-brands:hover{
+    color:rgb(135, 45, 154);
+    transition:.5s;
+}
+.social a{
+  font-family: arial ;
+  padding:12px 12px ;
+  align-items:space-around;
+  justify-content:space-around;
+  background: rgb(243, 237, 245);
+  border-radius:50%;
+  margin:10px 20px;
+}
+ /* "About me" button */
+.content a{
+    font-family: arial;
+    color: white;
+    padding: 12px 10px;
+    background-color: rgb(108, 24, 150);
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 0px;
+    border: 2px solid rgb(238, 218, 232);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+ .content a:hover{
+    background-color: crimson;
+    transition: .4s;
+    color: white;
+    text-decoration: none;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* footer part */
+.contact{
+    color: rgb(200, 148, 234);
+    position: relative;
+    width: 100%;
+    height:250px;
+    background-color: rgb(56, 6, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-transform: none;
+}
