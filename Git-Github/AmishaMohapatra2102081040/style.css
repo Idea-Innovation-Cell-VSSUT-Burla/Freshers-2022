@@ -1,0 +1,17 @@
+#grad {
+    background-image: linear-gradient(to bottom right, pink, rgb(250, 213, 219),white);
+    height:350px;
+    }
+    
+    
+    #grad1 {
+        background-image: linear-gradient(to bottom right,aqua, rgb(154, 248, 248), white);
+        height:50px;
+        }
+        
+    
+        #grad2 {
+            background-image: linear-gradient(to bottom right, grey, white);
+            
+            }
+            
