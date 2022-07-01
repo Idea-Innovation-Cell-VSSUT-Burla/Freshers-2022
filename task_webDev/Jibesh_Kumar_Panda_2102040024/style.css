@@ -1,0 +1,977 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Poppins&display=swap');
+
+:root{
+    --colorOne: #341212;
+    --colorTwo: #190227;
+    --colorThree: #280428;
+    --colorFour: #890246;
+    --colorFive: #C1FF3F;
+    --colorSix: #FF986A;
+    --colorSeven: #FF55AB;
+    --colorEight: #2AFF96;
+    --colorNine: #15FBFF;
+    --colorTen: #FBFFD3;
+    --colorEleven: #E4E2E2;
+    --colorTwelve: #EEEEEE;
+    --colorThirteen: #3ACB43;
+    --colorForteen: #FFFFFF; 
+    --colorFifteen: #035B73;
+    --colorSixteen: #0F8695;
+    --colorSeventeen: #B1636D;
+    --colorEighteen: #000000;
+    --colorNineteen: #4f0095;
+    --backgroundImageOne: url(Images/BACKGROUND1.jpg);
+    --backgroundImageTwo: url(Images/BACKGROUND2.jpg);
+    --backgroundEffectOne: linear-gradient(25deg, var(--colorTwo), var(--colorThree));
+    --backgroundEffectTwo: linear-gradient(25deg, var(--colorFifteen), var(--colorSixteen));
+    --lineGradient: linear-gradient(25deg, var(--colorFive), var(--colorSix));
+    --academicsBG: #00000041;
+    --navMainBG: linear-gradient(135deg, var(--colorNineteen), var(--colorEighteen), var(--colorNineteen));
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    background-image: var(--backgroundImageOne);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.navMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navMain .logo{
+    width: 50%;
+    position: relative;
+}
+
+.navMain .logo img{
+    border-radius: 50%;
+    margin: 13.25px;
+    height: 42px;
+}
+
+.navMain ul{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navMain ul li{
+    list-style: none;
+    width: 10%;
+    text-align: center;
+
+}
+
+
+.navMain ul li a{
+    text-decoration: none;
+    color: var(--colorEleven);
+    transition: .3s ease-in;
+}
+
+.navMain ul li a:hover{
+    color: var(--colorEight);
+}
+
+.button{
+    color: var(--colorTen);
+    margin-left: 20%;
+    margin-right: 5%;
+    padding: 10px 10px;
+    background: var(--colorFour);
+    border-radius: 20%;
+    transition: .5s ease-in-out;
+}
+
+#home{
+    height: 100vh;
+    width: 100vw;
+}
+
+.home{
+    background: var(--backgroundEffectOne);
+}
+
+.homeCon{
+    display: flex;
+    align-items: center;
+    margin-top: 45vh;
+    margin-left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.homeCon .outer .inner img{
+    max-height: 50vh;
+    z-index: 2;
+    padding-left:;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.content h1{
+    font-size: 7vmin;
+    text-decoration: overline;
+}
+
+
+.content h1, .content h2, .content p{
+    color: var(--colorTen);
+}
+
+#about{
+    height: 100vh;
+    width: 100vw;
+}
+
+.aboutHead{
+    text-align: center;
+    color: var(--colorTen);
+    padding-top: 10vh;
+}
+
+.aboutP{
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    border-radius: 20%;
+    width: 6%;
+    background: var(--backgroundEffectOne);
+}
+
+#about .border{
+    margin-top: 45vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    border: var(--colorOne) solid 2px;
+    background: var(--lineGradient);
+    width: 50%;
+}
+
+.aboutContent{
+    margin: 2px;
+    padding: 15%;
+    border-radius: 12.5%;
+    background: var(--backgroundEffectOne);
+}
+
+.aboutContent h1, .aboutContent h4, .aboutContent p{
+    color: var(--colorTen);
+}
+
+.aboutContent .line{
+    display: block;
+    width: 8vw;
+    height: 2px;
+    border-radius: 2%;
+    background: var(--lineGradient);
+}
+
+#experience{
+    height: 125vh;
+    width: 100vw;
+}
+
+.experience{
+    background: var(--backgroundEffectOne)
+}
+
+.expHead{
+    text-align: center;
+}
+
+.expHead p, .expHead h1{
+    color: var(--colorTen);
+}
+
+.expHead p{
+    padding-top: 4vh;
+}
+
+.expHead .line{
+    display: block;
+    width: 8vw;
+    height: 2px;
+    margin: 0 auto;
+    border-radius: 2%;
+    background: var(--lineGradient);
+}
+
+#experience .box{
+    margin-top: 54vh;
+    margin-left: 50vw;
+    width: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#experience .box .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experience .box .row1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 50%;
+    padding: 2% 1%;
+    margin: 1% 0 0 -30%;
+    text-align: right;
+    border-radius: 3%;
+    background: var(--colorThirteen);
+    transition: .5s ease-in-out;
+}
+
+#experience .box .row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 2% 1%;
+    margin: 1% 0 0 30%;
+    border-radius: 3%;
+    background: var(--colorForteen);
+    transition: .5s ease-in-out;
+}
+
+#experience .box .row1:hover{
+    background: var(--colorTwelve);
+    cursor: default;
+}
+
+#experience .box .row2:hover{
+    background: var(--colorThirteen);
+    cursor: default;
+}
+
+#experience .box .button:hover{
+    background: var(--colorThirteen);
+    cursor: pointer;
+}
+
+#experience .box .img{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.expContent{
+    width: 75%;
+}
+
+.expContent h3, .expContent h4, .expContent p{
+    color: var(--colorOne);
+    margin: 1vh 0;
+}
+
+#experience .box img{
+    height: 100px;
+    border-radius: 4%;
+}
+
+#experience .col .button{
+    margin-left: 30vw;
+    background-color: var(--colorTwelve);
+    color: var(--colorOne);
+}
+
+#experience .row1 .img{
+    padding-left: 15px;
+    padding-right: 10px;
+}
+#experience .row2 .img{
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+#academics{
+    height: 100vh;
+    width: 100vw;
+}
+
+#academics .box{
+    margin-left: 50%;
+    margin-top: 40vh;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+#academics .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#academics .col .row{
+    width: 100%;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--academicsBG);
+    border-radius: 2%;
+}
+
+#academics .box img{
+    height: 10vh;
+    border-radius: 50%;
+    transform: translateY(-2vh);
+}
+
+#academics .border{
+    background: var(--academicsBG);
+}
+
+.acaHead{
+    text-align: center;
+}
+
+.acaHead .line{
+    margin: 1vh auto;
+    display: block;
+    width: 10%;
+    height: 2px;
+    border-radius: 2%;
+    background: var(--lineGradient);
+}
+
+.acaHead{
+    text-align: center;
+    color: var(--colorTen);
+    padding-top: 4vh;
+}
+
+#academics .border{
+    height: 100vh;
+    margin: 0 20vw;
+}
+
+.acaContent{
+    transform: translateY(-1.5vh);
+}
+
+.acaContent p, .acaContent h3, .acaContent h4{
+    padding: 0;
+    color: var(--colorTen);
+    margin: 0.5vh;
+}
+
+#contact{
+    min-height: 270px;
+    width: 100vw;
+}
+
+.contact{
+    background: var(--backgroundEffectOne);
+}
+
+#contact h3{
+    color: var(--colorTen);
+}
+
+.conHead{
+    padding-top: 3vh;
+    text-align: center;
+}
+
+.diffP{
+    color: var(--colorSeven);
+}
+
+#contact .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact .line{
+    display: block;
+    width: 8vw;
+    height: 2px;
+    border-radius: 2%;
+    background: var(--lineGradient);
+    margin-bottom: 1vh;
+}
+
+#contact .col p{
+    margin: .5vh;
+    color: var(--colorTen);
+}
+
+#contact .col{
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.mediaIcons{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+i{
+    margin: 4px;
+    padding: 4px;
+    border-radius: 50%;
+    background: var(--colorTen);
+    color: var(--colorOne);
+}
+
+.row div:nth-child(2) a>i{
+    margin: 0;
+}
+
+.row div:nth-child(2) a>i, .row div:nth-child(2) a>p{
+    display: inline-block;
+}
+
+.contact .col a{
+    color: var(--colorTen);
+}
+
+.copyRight{
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--colorEight);
+}
+
+#contact a{
+    text-decoration: none;
+    color: var(--colorFive);
+}
+
+.addOns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 3.5%;
+}
+
+.addOns div:nth-child(2){
+    z-index: 2;
+}
+
+.topArrow{
+    transform: translateY(107.5%);
+    transition: all .5s ease;
+}
+
+.addOns .button{
+    margin-top: 4px;
+    border-radius: 50%;
+}
+
+.scrolled{
+    transform: translateY(0);
+}
+
+/* OCEAN THEME */
+
+.ocean{
+    background: var(--backgroundEffectTwo);
+}
+
+.oceanBG{
+    background: var(--backgroundImageTwo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.oceanContent{
+    color: var(--colorNine);
+}
+
+div.oceanBTN{
+    background: var(--colorTwo);
+}
+
+.oceanBTN{
+    background: var(--colorTwo);
+}
+
+
+/* Hamburger Bar */
+.menuBar{
+    background: var(--colorFour);
+    width: 39px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    top: 2%;
+    right: 2%;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.stLine{
+    background: var(--colorTen);
+    width: 18px;
+    height: 2px;
+    display: inherit;
+    transition: .5s ease;
+}
+
+.stLine:nth-child(1){
+    transform: translate(10px, 13px);
+    animation: swap1 4s ease 2s infinite;
+}
+
+.stLine:nth-child(2){
+    width: 14px;
+    transform: translate(12px, 18px);
+}
+
+.stLine:nth-child(3){
+    transform: translate(10px, 23px);
+    animation: swap2 4s ease 2s infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes swap1{
+    0%{transform: translate(10px, 13px);}
+    40%, 60%{transform: translate(10px, 27px);}
+    100%{transform: translate(10px, 13px);}
+}
+
+@keyframes swap2{
+    0%{transform: translate(10px, 23px);}
+    40%, 60%{transform: translate(10px, 8px);}
+    100%{transform: translate(10px, 23px);}
+}
+
+@keyframes swap3{
+    0%{transform: translate(10px, 19px) rotate(45deg);}
+    40%, 60%{transform: translate(10px, 19px) rotate(-45deg);}
+    100%{transform: translate(10px, 19px) rotate(45deg);}
+}
+
+@keyframes swap4{
+    0%{transform: translate(10px, 16px) rotate(-45deg);}
+    40%, 60%{transform: translate(10px, 16px) rotate(45deg);}
+    100%{transform: translate(10px, 16px) rotate(-45deg);}
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1200px){
+    .row1 h3, .row2 h3{
+        font-size: 1rem;
+    }
+    .menuBar{
+        display: block;
+    }
+    .navMain ul{
+        top: -50vh;
+        right: -50vw;
+        background: var(--navMainBG);
+        transform: scale(0);
+        filter: grayscale(100%);
+        flex-direction: column; 
+        z-index: 3;
+        border-radius: 50%;
+        padding: 0;
+        position: absolute;
+        transition: transform .5s ease-in-out;
+    }
+    .navMain ul li{
+        width: auto;
+        padding: 10px;
+    }
+    .navMain .button{
+        margin: 10px auto;
+        padding: 5px;
+        width: auto;
+    }
+    /* HAMBURGER ACTIVE */
+    .openMenu ul{
+        top: -10vh;
+        right: -10vw;
+        padding: 20% 2%;
+        transform: scale(1);
+        filter: grayscale(0);
+        position: fixed;
+    }
+    .openMenu ul li{
+        width: 50%;
+    }
+    .openMenuIcon .stLine:nth-child(1){
+        transform: translate(10px, 19px) rotate(45deg);
+        animation: swap3 4s ease 2s infinite;
+    }
+    .openMenuIcon .stLine:nth-child(2){
+        transform: translate(12px, 18px);
+        filter: opacity(0);
+    }
+    .openMenuIcon .stLine:nth-child(3){
+        transform: translate(10px, 16px) rotate(-45deg);
+        animation: swap4 4s ease 2s infinite;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .homeCon .content h1{
+        font-size: 6vmin;
+    }
+    #about .border{
+        width: 60%;
+    }
+    .aboutContent p{
+        font-size: 0.9rem;
+    }
+    .aboutP{
+        width: 8%;
+    }
+    #experience .box{
+        width: 70%;
+    }
+    #experience .box .row1{
+        margin: 1.5% 0 1.5% -30%;
+    }
+    #experience .box .row2{
+        margin: 1.5% 0 1.5% 30%;
+    }
+    .addOns i{
+        font-size: 0.8rem;
+    }
+    .addOns .button{
+        padding: 3px;
+    }
+    #academics .border{
+        width: 67.5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 990px){
+    .homeCon .outer .inner img{
+        max-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 880px){
+    #experience .box img{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .homeCon .content h1{
+        font-size: 5vmin;
+    }
+    .homeCon .content{
+        padding: 0 15%;
+    }
+    #experience .box{
+        width: 80%;
+    }
+    #experience .box .row1{
+        margin: 2% 0 2% -25%;
+    }
+    #experience .box .row2{
+        margin: 2% 0 2% 25%;
+    }
+    #academics .border{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .homeCon{
+        flex-direction: column;
+        margin-left: 50%;    
+    }
+    .homeCon .content{
+        padding-top: 5%;
+    }
+    .homeCon .content h1{
+        font-size: 6vmin;
+    }
+    #about .border{
+        width: 70%;
+    }
+    .aboutP{
+        width: 10%;
+    }
+    .aboutContent{
+        padding: 10%;
+    }
+    .aboutContent p{
+        font-size: 0.8rem;
+    }
+    .row1 h4, .row2 h4{
+        font-size: 0.8rem;
+    }
+    #experience .box .row1{
+        margin: 3% 0 3% -22%;
+    }
+    #experience .box .row2{
+        margin: 3% 0 3% 22%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    .addOns i{
+        font-size: 0.7rem;
+    }    
+    .addOns .button{
+        padding: 2px;
+    }
+    #academics .box{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    #about .border{
+        width: 75%;
+    }
+    .aboutP{
+        width: 12%;
+    }
+    #experience .box{
+        width: 85%;
+    }
+    #experience .box .row1{
+        margin: 3% 0 3% -20%;
+        width: 60%;
+    }
+    #experience .box .row2{
+        margin: 3% 0 3% 20%;
+        width: 60%;
+    }
+    #academics .box{
+        width: 90%;
+    }
+    .acaContent h3{
+        font-size: 1rem;
+    }
+    .acaContent h4{
+        font-size: 0.9rem;
+    }
+    .acaContent p{
+        font-size: 0.8rem;
+    }
+    .conHead{
+        margin: 0 10%;
+    }
+    #contact .row{
+        flex-wrap: wrap;
+    }
+    #contact .col{
+        width: 40%;
+    }
+    #academics .border{
+        width: 80%;
+    }
+    .row1 p, .row2 p{
+        font-size: 0.7rem;
+    }
+    /* HAMBURGER ACTIVE */
+    .openMenu ul{
+        padding: 20% 5% 10% 5%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .homeCon .content>h2{
+        font-size: 4vmin;
+    }
+    .homeCon .content>p{
+        font-size: 3vmin;
+    }
+    .homeCon .outer .inner img{
+        max-height: 25vh;
+        padding: 5vh;
+    }
+}
+
+@media screen and (max-width: 490px){
+    #experience .box img{
+        height: 70px;
+    }
+    /* HAMBURGER ACTIVE */
+    .openMenu ul{
+        padding: 30% 10% 20% 10%;;
+    }
+}
+
+@media screen and (max-width: 465px){
+    #contact p{
+        font-size: 0.8rem;
+    }
+    .aboutP{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .aboutP{
+        width: 20%;
+        font-size: 0.9rem;
+    }
+    .aboutContent h1{
+        font-size: 1.1rem;
+    }
+    .aboutContent h4{
+        font-size: 1rem;
+    }
+    #experience .box{
+        width: 90%;
+    }
+    #experience .box .row1{
+        margin: 3.5% 0 3.5% -15%;
+        width: 70%;
+    }
+    #experience .box .row2{
+        margin: 3.5% 0 3.5% 15%;
+        width: 70%;
+    }
+    #contact .col{
+        width: 80%;
+        padding-bottom: 5%;
+    }
+    .acaContent h3{
+        font-size: 0.9rem;
+    }
+    .acaContent h4{
+        font-size: 0.8rem;
+    }
+    .acaContent p{
+        font-size: 0.7rem;
+    }
+    #academics .box{
+        width: 95%;
+    }
+    #academics .border{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    #experience .box .row1{
+        margin: 4% 0 4% -10%;
+        width: 80%;
+    }
+    #experience .box .row2{
+        margin: 4% 0 4% 10%;
+        width: 80%;
+    } 
+    /* HAMBURGER ACTIVE */
+    .openMenu ul{
+        padding: 50% 20% 30% 20%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .homeCon .content>h1{
+        font-size: 8vmin;
+    }
+    .homeCon .content>h2{
+        font-size: 7vmin;
+    }
+    .homeCon .content>p{
+        font-size: 5vmin;
+    }
+    .aboutP{
+        width: 30%;
+        font-size: 0.7rem;
+    }
+    #about .border{
+        width: 95%;
+    }
+    #experience .box .row1{
+        margin: 4% 0 4% -10%;
+        width: 90%;
+    }
+    #experience .box .row2{
+        margin: 4% 0 4% 10%;
+        width: 90%;
+    } 
+    #experience .box img{
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 265px){
+    .homeCon .outer .inner img{
+        max-height: 20vh;
+    }
+    .homeCon .content>h1{
+        font-size: 10vmin;
+    }
+    .homeCon .content>h2{
+        font-size: 9vmin;
+    }
+    .homeCon .content>p{
+        font-size: 7vmin;
+    }
+    #experience .box .row1{
+        margin: 5% 0;
+        width: 95%;
+    }
+    #experience .box .row2{
+        margin: 5% 0;
+        width: 95%;
+    } 
+    #experience .button{
+        margin: 5% 0;
+    }
+    .row1 p, .row2 p{
+        font-size: 0.6rem;
+    }
+    .row1 h3, .row2 h3{
+        font-size: 0.8rem;
+    }
+    .row1 h4, .row2 h4{
+        font-size: 0.7rem;
+    }
+    /* HAMBURGER ACTIVE */
+    .openMenu ul li{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 220px){
+    #experience .box img{
+        height: 50px;
+    }
+    /* HAMBURGER ACTIVE */
+    .openMenu ul{
+        padding: 70% 30% 40% 30%;
+    }
+}
+
